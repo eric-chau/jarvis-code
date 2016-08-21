@@ -1,0 +1,18 @@
+{
+    "name": "eric-chau/jarvis-code",
+    "description": "Jarvis code is a bootstrap for Jarvis project",
+    "license": "MIT",
+    "require": {
+        "eric-chau/jarvis": "dev-master",
+        "eric-chau/twig-skill": "dev-master",
+        "eric-chau/debug-skill": "dev-master",
+        "eric-chau/console-skill": "dev-master",
+        "eric-chau/doctrine-skill": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "JarvisCode\\": "src/"
+        }
+    },
+    "minimum-stability": "beta"
+}
