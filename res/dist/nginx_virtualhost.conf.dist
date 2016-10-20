@@ -7,7 +7,6 @@ server {
     error_log /var/www/jarviscode/log/error.log;
 
     location ~* \.(css|js|png|woff2|woff|jpg) {
-        expires 1y;
         try_files $uri @rewriteapp;
     }
 

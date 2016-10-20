@@ -6,8 +6,6 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 use Jarvis\Jarvis;
 use Jarvis\Skill\Debug\DebugCore;
-use Jarvis\Skill\EventBroadcaster\BroadcasterInterface;
-use Jarvis\Skill\EventBroadcaster\RunEvent;
 use Jarvis\Skill\Twig\TwigCore;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -25,8 +23,8 @@ $app = new Jarvis([
 $app
     ->router
     ->beginRoute()
-        ->setHandler(function() use ($app) {
-            return new Response($app->twig->render('index.html.twig'));
+        ->setHandler(function (\Twig_Environment $twig) {
+            return new Response($twig->render('index.html.twig'));
         })
     ->end()
 ;

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace InsaneFormula\Command;
+namespace JarvisCode\Command;
 
 use Jarvis\Skill\Console\AbstractApplicationConfig;
 
