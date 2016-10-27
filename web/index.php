@@ -11,12 +11,14 @@ use Symfony\Component\HttpFoundation\Response;
 
 $app = new Jarvis([
     'debug' => true,
-    'container_provider' => [
+    'providers' => [
         DebugCore::class,
         TwigCore::class,
     ],
-    'twig' => [
-        'templates_paths' => __DIR__ . '/../res/views/',
+    'extra' => [
+        'twig' => [
+            'templates_paths' => __DIR__ . '/../res/views/',
+        ],
     ],
 ]);
 
