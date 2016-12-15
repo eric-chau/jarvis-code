@@ -4,14 +4,20 @@
     "license": "MIT",
     "require": {
         "eric-chau/jarvis": "dev-master",
-        "eric-chau/twig-skill": "dev-master",
-        "eric-chau/debug-skill": "dev-master",
+        "eric-chau/doctrine-skill": "dev-master",
         "eric-chau/console-skill": "dev-master",
-        "eric-chau/doctrine-skill": "dev-master"
+        "eric-chau/twig-skill": "dev-master"
+    },
+    "require-dev": {
+        "eric-chau/debug-skill": "dev-master",
+        "friendsofphp/php-cs-fixer": "^2.0",
+        "phpro/grumphp": "^0.10.1",
+        "seld/jsonlint": "^1.5",
+        "symfony/var-dumper": "3.2.*"
     },
     "autoload": {
         "psr-4": {
-            "JarvisCode\\": "src/"
+            "JarvisCode\\": "core/"
         }
     },
     "minimum-stability": "beta"

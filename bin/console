@@ -6,7 +6,8 @@ declare(strict_types = 1);
 require_once __DIR__.'/../vendor/autoload.php';
 
 use JarvisCode\Command\ApplicationConfig;
+use JarvisCode\SettingsLoader;
 use Webmozart\Console\ConsoleApplication;
 
-$cli = new ConsoleApplication(new ApplicationConfig(), 'jarviscode', '1.0.0');
+$cli = new ConsoleApplication(new ApplicationConfig(SettingsLoader::load()), 'jarviscode', '1.0.0');
 $cli->run();
